@@ -1,0 +1,87 @@
+/*
+Copyright (c) 2014 Webvillee.
+------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Lawyer
+Version:	1.0.0
+Assigned to:	Themeforest
+Primary use:	Lawyers, Attorneys, Advocates, Barristers, Legal Advisers 
+-------------------------------------------------------------------*/
+
+/*
+[Table of contents]
+
+1. Body
+2. Preloader / .preloader
+3. Header / header
+4. Navigation / .navbar-default
+5. Main Slider / .slider
+6. Practice Area / .practice_area_slider
+7. Who We Are / .who-we-are
+8. Statics / .Statics
+9. Latest News/ .latest-news-main 
+10. Our Attorneys Silder Home / .wv-slidehover-main
+11. Blog Home / .home-blog
+12. About / .about-organization
+13. Testimonial / .client-testimonials-main
+14. Price Table / .portfolio_wide_slider
+15. Figure Counter / .fun-factor
+16. Our Partners / .our-partners
+17. Practice Area Page / .practice_area_inner
+18. Attorneys Page / .attorney-all-main
+19. Accordion / .panel-group
+20. Tabs / .all-vertical-tabs
+21. Blog Page/ .all-blogs
+22. Blog Grid Page / .blog-grid-all
+23. Post Pagination / .pagination
+24. comment / .leave-comments
+25. Sidebar Page/ .sidebar
+26. Sidebar Widget / .widget
+27. Client Login / .client-login
+28. Contact Page / .contact-area
+29. Upper Footer / .upper-footer 
+30. Footer / footer
+31. Social Icon / .social
+-------------------------------------------------------------------*/
+
+/*
+[Color codes]
+
+Background:	#ffffff (white)
+Content:	#595959 (light black)
+Header h1:	#000/#4b4b4b (black and drak gray touch)
+Header h2:	#000/#4b4b4b (black and drak gray touch)
+Footer:		#2a2a2a (dark gray)
+
+
+a (standard):	#fff/#171717 (white or light black)
+a (visited):	#fff/#171717 (white or light black)
+a (active):		#f55e45 (bright red)
+
+Hover :		#f55e45 (bright red)
+--------------------------------------------*/
+
+/* Font Awesome Icons */
+@import url("assets/plugin/font-awesome/css/font-awesome.min.css");
+/* Bootstrap core CSS*/
+@import url("assets/plugin/bootstrap/css/bootstrap.min.css");
+
+/*SLIDER REVOLUTION CSS SETTINGS */
+@import url("assets/plugin/revslider/css/extralayers.css");
+@import url("assets/plugin/revslider/css/settings.css");
+
+/*Defaults CSS SETTINGS */
+@import url("assets/css/hover-dropdown-menu.css");		
+@import url("assets/css/style.css");
+@import url("assets/css/responsive.css");
+@import url("assets/css/color.css");
+@import url("assets/css/animate.min.css");
+
+
+/*Important Owl stylesheet*/
+@import url("assets/plugin/owl-carousel/css/owl.carousel.css");
+@import url("assets/plugin/owl-carousel/css/owl.theme.css");
+@import url("assets/css/owl/owl.transitions.css");
+
+

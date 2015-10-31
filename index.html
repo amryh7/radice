@@ -259,17 +259,21 @@
             </p>
           </div>
           <div class="col-md-12">
-            <form class="attorney-contact-form top-margin-20">
+            <form name="contact-form" class="attorney-contact-form top-margin-20" action="assets/php/form-val.php">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+			  <div class="attorney-contact-form-required">Required</div>
+                <input type="text" name="iName" class="form-control" placeholder="Your Name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email">
+			  <div class="attorney-contact-form-required">Required</div>
+                <input type="email" name="iEmail" class="form-control" id="exampleInputEmail1" placeholder="Your Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputNumber" placeholder="Your Number">
+			  <div class="attorney-contact-form-required">Required</div>
+                <input type="text" name="iPhone" class="form-control" id="exampleInputNumber" placeholder="Your Number">
               </div>
               <div class="form-group">
+			  <div class="attorney-contact-form-required">Required</div>
                 <textarea name="contact_message" class="textarea-message form-control" id="exampleInputMessage"
                 placeholder="Your Message" rows="6" data-bv-field="contact_message"></textarea>
               </div>
@@ -324,6 +328,9 @@
 
   <!-- CUSTOM JS -->
   <script src="assets/js/custom.js"></script>
+  
+  <!-- Form JS -->
+  <script src="assets/js/formval.js"></script>
 
 </body>
 

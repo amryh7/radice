@@ -16,38 +16,36 @@ function auto_mail($mail_array){
 			<head>			
 				<title>Request for Quote</title>				
 			</head>
-			<body>
-				<div>
+			<body style="margin: 0;">
+				<div style="border-top: 5px solid #F55E45;border-bottom: 5px solid #222222; border-radius: 5px;background-color:#FFFFFF; margin: 5px;">
 					<div>
-						<h1>Personal Info</h1>
-						<div class="form-group">
-							<div class="col-xs-6">
-							  <h4 style="display: inline">First Name: </h4>
-							  '. $mail_array['Name'] .'
+						<h1 style="line-height: 2em;background-color: #222222; color: #fff; padding-left: 20px; margin: 0;font-family:Helvetica,Arial,sans-serif">Request for Consultation</h1>
+						<div>
+							<div style="padding: 20px 0px 20px 20px;">
+							  <h2 style="display: inline;">Client Name: </h2><h2 style="display: inline;">
+							  '. $mail_array['Name'] .'</h2>
 							</div>
 						</div>					
-						<div class="form-group">
-							<div class="col-xs-6">
-							  <h4 style="display: inline">Email: </h4>
-							  '. $mail_array['Email'] .'
+						<div>
+							<div style="padding: 0px 0px 20px 20px;">
+							  <h3 style="display: inline">Email: </h3><h3 style="display: inline;">
+							  '. $mail_array['Email'] .'</h3>
 							</div>
 						</div>
-						<div class="form-group">
-							<div class="col-xs-6">
-							  <h4 style="display: inline">Phone: </h4>
-							  '. $mail_array['Phone'] .'
+						<div>
+							<div style="padding: 0px 0px 20px 20px;">
+							  <h3 style="display: inline">Phone: </h3><h3 style="display: inline;">
+							  '. $mail_array['Phone'] .'</h3>
 							</div>
 						</div>
-					</div>
-						<div class="form-group">
-							<div class="col-xs-4">
-							  <h4 style="display: inline">Message: </h4>
+						<div style="border-bottom: 5px solid #F55E45;"">
+							<div style="padding: 0px 0px 20px 20px;">
+							  <h3 style="display: inline">Message: </h3>
 							  '. $mail_array['Message'] .'
 							</div>
 						</div>
 					</div>
 				</div>
-				<hr>
 			</body>
 		</html>';
 

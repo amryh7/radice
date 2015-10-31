@@ -86,40 +86,40 @@ $('button[type="submit"]').on('click', function(evt){
 
 	var $form_check = 0;
 	if (!$IName.val()){
-		$IName.css({"border":"2px solid #F96D55"});
+		$IName.css({"border":"2px solid #F96D55"}).attr( "placeholder", "Michelle Radice" ).val("");
 		$IName.siblings().css({"color":"#F96D55"});
 		$form_check++;
 	} else {
 		// -- checking for valid name format; all characters
 		var regex = /^[a-z ,-]+$/i;
 		if (regex.test($IName.val()) == false){
-		$IName.css({"border":"2px solid #F96D55"});
+		$IName.css({"border":"2px solid #F96D55"}).attr( "placeholder", "Michelle Radice" ).val("");
 		$IName.siblings().css({"color":"#F96D55"});
 		$form_check++;
 		};
 	};
 	if (!$IEmail.val()){
-		$IEmail.css({"border":"2px solid #F96D55"});
+		$IEmail.css({"border":"2px solid #F96D55"}).attr( "placeholder", "michelle@radicelawstl.com" ).val("");
 		$IEmail.siblings().css({"color":"#F96D55"});
 		$form_check++;
 	} else {
 		// -- checking for valid email format; characters@characters.characters
 		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 		if (regex.test($IEmail.val()) == false){
-		$IEmail.css({"border":"2px solid #F96D55"});
+		$IEmail.css({"border":"2px solid #F96D55"}).attr( "placeholder", "michelle@radicelawstl.com" ).val("");
 		$IEmail.siblings().css({"color":"#F96D55"});
 		$form_check++;
 		};
 	};
 	if (!$INumber.val()){
-		$INumber.css({"border":"2px solid #F96D55"});
+		$INumber.css({"border":"2px solid #F96D55"}).attr( "placeholder", "(314)241-4505" ).val("");
 		$INumber.siblings().css({"color":"#F96D55"});
 		$form_check++;
 	} else {
 		// -- checking for valid phone format; 9+ numbers with/without "()-."
 		var regex = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
 		if (regex.test($INumber.val()) == false){
-		$INumber.css({"border":"2px solid #F96D55"});
+		$INumber.css({"border":"2px solid #F96D55"}).attr( "placeholder", "(314)241-4505" ).val("");
 		$INumber.siblings().css({"color":"#F96D55"});
 		$form_check++;
 		};

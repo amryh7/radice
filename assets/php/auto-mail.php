@@ -54,21 +54,14 @@ function auto_mail($mail_array){
 	$hash = md5(uniqid(time()));
 
     $header = 'From: RadiceLawStl.com <michelle@radicelawstl.com>' . "\r\n";
-	$header .= 'Reply-To:' . $mail_array['Name'] . '<' . $mail_array['Email'] . '>' . "\r\n";
+    $header .= 'Reply-To:' . $mail_array['Name'] . '<' . $mail_array['Email'] . '>' . "\r\n";
 	
 				// To send HTML mail, the Content-type header must be set
     $header .= "MIME-Version: 1.0\r\n";
-    $header .= "Content-Type: multipart/mixed; boundary=\"".$hash."\"\r\n\r\n";
-	
-				// Additional headers
-    $header .= "This is a multi-part message in MIME format.\r\n";
-    $header .= "--".$hash."\r\n";
     $header .= "Content-type:text/html; charset=iso-8859-1\r\n";
-    $header .= "Content-Transfer-Encoding: 7bit\r\n\r\n";
-    $header .= $message."\r\n\r\n";
 	
 	    // $message is already in header
-    return mail($to, $subject, "", $header);
+    return mail($to, $subject, $message, $header);
 }
 ?>
 
